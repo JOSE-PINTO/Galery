@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto.app</title>
     <link rel="stylesheet" href="style.css">
-    </script>
-    
+   
+
 </head>
 
 <body>
-    <script src="app.js"></script>
     <div class="container">
+  
+   
         <div class="lista">
             <img src="imagenes/logo.png" class="logo">
             <nav>
@@ -64,11 +65,30 @@
 
         <img src="imagenes/cuadrado.png" class="icono4">
 
-    </div>
 
+       
+
+    </div>
+    <script>
+    var btn = document.getElementsByClassName("btn");
+    var fotos = document.getElementById("fotos");
     
+    var imagenes = new Array(
+        "imagenes/pic1.jpg",
+        "imagenes/pic2.jpg",
+        "imagenes/pic3.jpg",
+        "imagenes/pic4.jpg",
+    );
     
-    
+    for ( i = 0; i < btn.length; i++) {
+        btn[i].onclick = function () {
+            fotos.src = imagenes[i];
+             current = document.getElementsByClassName("activar");
+            current[0].ClassName = current[0].ClassName.replace("activar", "");
+            this.className += "activar";
+        };
+    }
+</script>
 </body>
 
 </html>
