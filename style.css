@@ -48,3 +48,127 @@ nav ul li a{
     padding: 5px 2px;
     
 }
+
+nav ul li a:hover{
+color: #e7c82f;
+}
+
+.row{
+    width: 80%;
+    min-height: 85vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    margin: 20px 0;
+    flex-basis: 50%;
+    min-width: 300px;
+    height: 100%;
+    position: relative;
+}
+    
+.text-box{
+    max-width: 400px;
+    margin-top: 100px;
+
+}
+
+.text-box h5{
+    color: #e7c82f;
+    font-size: 20px;
+
+}
+.text-box h1{
+    
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 65px;
+   
+    
+}
+
+.galeria{
+        max-width: 400px;
+        position: relative;
+        margin: auto;
+
+}
+.galeria img{
+    width: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+
+}
+.galeria ul{
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.galeria  li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.galeria li:hover{
+    color: #e7c82f ;
+
+}
+.galeria .activar{
+    color: #e7c82f ;
+}
+
+.galeria  li::after{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    top: 8px;
+    left: -5px;
+}
+
+.galeria .activar::after{
+    background: #e7c82f ;
+
+}
+
+.icono1{
+    width: 15px;
+    position: absolute;
+    right: 200px;
+    top: -10px;
+    opacity: 0.3;
+}
+
+.icono2{
+    width: 35px;
+    position: absolute;
+    right: 200px;
+    bottom: -100px;
+    opacity: 0.3;
+}
+.icono3{
+    width: 15px;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    opacity: 0.7;
+    transform: rotate(45deg);
+
+}
+.icono1{
+    width: 300px;
+    position: absolute;
+    top: 140px;
+    left:-150px;
+    opacity: 0.3;
+}
+
