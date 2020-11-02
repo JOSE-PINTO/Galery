@@ -1,18 +1,19 @@
-var btn = document.getElementsByClassName("btn");
-var fotos = document.getElementById("fotos");
+vec = [
+  "imagenes/pic5.jpg",
+  "imagenes/pic6.jpg",
+  "imagenes/pic7.jpg",
+  "imagenes/pic8.png",
+];
 
-var imagenes = new Array(
-    "imagenes/pic1.jpg",
-    "imagenes/pic2.jpg",
-    "imagenes/pic3.jpg",
-    "imagenes/pic4.jpg",
-);
+const btn = document.querySelectorAll(".btn");
 
-for (Left i = 0; i < btn.length; i++) {
-    btn[i].onclick = function () {
-        fotos.src = imagenes[i];
-         current = document.getElementsByClassName("activar");
-        current[0].ClassName = current[0].ClassName.replace("activar", "");
-        this.className += "activar";
-    };
+function cambiar(pos) {
+  document.getElementById("imagen").src = vec[pos - 1];
+  btn[pos - 1].className = "btn activar";
+
+  for (var i = 0; i < btn.length; i++) {
+    if (i != pos - 1) {
+      btn[i] .className = "btn";
+    }
+  }
 }

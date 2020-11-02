@@ -7,7 +7,7 @@
 
 .container{
     width: 100%;
-    background: linear-gradient(-45deg, #22046b, rgb(57, 83, 82)   );
+    background: linear-gradient(-45deg, #22046b, rgb(17, 22, 54) );
     min-height: 100vh;
     color: #fff;
 }
@@ -51,12 +51,13 @@ nav ul li a{
 nav ul li a:hover{
     color: #e7c82f;
 }
-.row{
+.fila{
     width: 80%;
     min-height: 85vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+ 
    
 } 
 
@@ -66,6 +67,7 @@ nav ul li a:hover{
     min-width: width 400px;
     height: 100%;
     position: relative;
+   
 }
 .text-box{
     max-width: 400px;
@@ -79,7 +81,7 @@ nav ul li a:hover{
 
 }
 .text-box h1{
-    
+    border:solid black;
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 3px;

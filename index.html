@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>proyecto.app</title>
     <link rel="stylesheet" href="style.css" />
+   
   </head>
 
   <body>
@@ -37,19 +38,21 @@
 
         <div class="col2">
           <div class="galeria">
-            <img src="imagenes/pic5.jpg" height="400"  id="fotos" />
+            <img src="imagenes/pic5.jpg "  height="400"  id="imagen" />
 
             <ul>
-              <li class="btn">01</li>
-              <li class="btn activar">02</li>
-              <li class="btn">03</li>
-              <li class="btn">04</li>
+              <li onclick="cambiar (1)"  class="btn">01</li>
+              <li onclick="cambiar (2)" class="btn activar">02</li>
+              <li onclick="cambiar (3)" class="btn">03</li>
+              <li onclick="cambiar (4)" class="btn">04</li>
             </ul>
           </div>
         </div>
       </div>
 
       <img src="imagenes/cuadrado.png" class="icono4" />
+
+      <script src="app.js"></script>
     </div>
     
   </body>
